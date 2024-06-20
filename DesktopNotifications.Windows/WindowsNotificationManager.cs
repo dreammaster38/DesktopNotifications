@@ -206,9 +206,13 @@ namespace DesktopNotifications.Windows
             builder.AddText(notification.Title);
             builder.AddText(notification.Body);
 
-            if (notification.BodyImagePath is { } img)
+            if (notification.BodyImagePath is { } bodyImg)
             {
-                builder.AddInlineImage(new Uri($"file:///{img}"), notification.BodyImageAltText);
+                builder.AddInlineImage(new Uri($"file:///{bodyImg}"), notification.BodyImageAltText);
+            }
+            if (notification.AppLogoImagePath is { } logoImg)
+            {
+                builder.AddAppLogoOverride(new Uri($"file:///{logoImg}"));
             }
 
             foreach (var (title, actionId) in notification.Buttons)

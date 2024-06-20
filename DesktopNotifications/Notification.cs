@@ -17,6 +17,8 @@ namespace DesktopNotifications
         public string? Body { get; set; }
 
         public string? BodyImagePath { get; set; }
+        
+        public string? AppLogoImagePath { get; set; }
 
         public string BodyImageAltText { get; set; } = "Image";
 
