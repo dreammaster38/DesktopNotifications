@@ -21,7 +21,8 @@ A cross-platform C# library for native desktop "toast" notifications.
 | Replacing notifications                | ✕       | ✕                   |  ✕   |
 | Buttons                  | ✓       | ✓                   |  ✕   |
 | Audio                  | ✕       | ✕                   |  ✕   |
-| Images                  | ✓       | ✓***                   |  ✕   |
+| Body Inline Images                  | ✓       | ✓***                   |  ✕   |
+| App logo Image                  | ✓       | X                   |  ✕   |
 
 <sub> * Scheduled notifications will only be delivered while the application is running. </sub>  
 <sub> ** This is currently not supported when targeting .netstandard </sub>  
